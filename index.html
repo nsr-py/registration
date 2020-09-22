@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Letter from emoji</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="root">
+		<div>
+			<form class="main">
+				<div>
+					<table>
+						<tr>
+							<td>
+								<label for="name">Full name</label>
+								<input type="text" name="name" id="name" required />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" required/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="mobile">Mobile Number</label>
+								<input type="tel" name="mobile" id="mobile" required/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="dob">Date of Birth</label>
+								<input type="date" name="dob" id="dob" required/>
+							</td>
+						</tr>
+					</table>
+					<br><br>
+					<table>
+						<tr>
+							<td>
+								<label>Gender</label><br>
+								<form required>
+									 <input type="radio" id="male" name="gender" class="gender" value="male">
+									<label for="male">Male</label><br>
+									<input type="radio" id="female" name="gender" class="gender" value="female">
+									<label for="female">Female</label><br>
+									<input type="radio" id="other" name="gender" class="gender" value="other">
+									<label for="other">Other</label> <br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Do you agree to follow the social distancing and precautions including mask and using sanitizer time to time in case of offline classes? </label><br>
+								<form>
+									<input type="radio" name="ques1" class="ques1" value="Yes"/>
+									<label for="yes">Yes</label><br>
+									<input type="radio" name="ques1" class="ques1" value="No"/>
+									<label for="no">No</label><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>You have to send the screenshot of the payment details of the Registration cum course fees on the whatsapp no. [7792062402]. If you have sent it tick yes.</label><br>
+								<form>
+									<input type="radio" name="ques2" class="ques2" value="Yes"/>
+									<label for="yes">Yes</label><br>
+									<input type="radio" name="ques2" class="ques2" value="No"/>
+									<label for="no">No</label><br>
+								</form>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<input type="submit" name="submit" value="submit">
+				</div>
+			</form>
+		</div>
+		<div class="result">
+			
+		</div>
+
+	</div>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  
+</script>
+
+<!-- <script type="text/javascript">
+	const form = document.querySelector("form")
+	const UserId = 3;
+	let e1, e2;
+
+	form.addEventListener('submit', event => {
+	  
+	  event.preventDefault()
+
+	  e1 = document.getElementById("e1").value;
+	  e2 = document.getElementById("e2").value;
+	  
+	  console.log(e1, e2)
+	  firebase
+	  .database()
+	  .ref('data/')
+	  .update({
+	    e1: e1,
+	    e2:e2
+	  })
+	})
+
+</script> -->
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

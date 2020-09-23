@@ -1,3 +1,11 @@
+html{
+  background-color: #E0E0E0  ;
+}
+
+.rule{
+  border-top: 1px solid grey ;
+}
+
 .fa {
   padding: 5px;
   font-size: 30px;
@@ -15,22 +23,22 @@
 
 .fa-facebook {
 /*  background: #B3B6B7;
-*/  color: grey;
+*/  color: #4B0082;
 }
 
 .fa-twitter {
 /*  background: #B3B6B7;
-*/  color: grey;
+*/  color: #4B0082;
 }
 
 .fa-linkedin {
 /*  background: #B3B6B7;
-*/  color: grey;
+*/  color: #4B0082;
 }
 
 .fa-instagram {
 /*  background: #B3B6B7;
-*/  color: grey;
+*/  color: #4B0082;
 }
 
 .center {
@@ -55,4 +63,12 @@
 .btn:hover {
   background-color: grey;
   color: white;
+}
+
+#foot{
+  color: #404040;
+
+}
+#register{
+  color: #404040;
 }

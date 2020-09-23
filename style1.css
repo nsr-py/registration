@@ -48,6 +48,36 @@ html{
   height: 50%;
 }
 
+
+.pay{
+  margin: auto;
+  text-align: center;
+  color: #303030;
+}
+
+.qr{
+  position:relative;
+  height:40%;
+  width:40%;
+}
+.qr img{
+  align-content: center;
+  display:block;
+  width:150px;
+  margin:auto;
+  padding:0;
+  position:relative;
+  left:75%;
+}
+
+#cong{
+  font-size: 20px;
+}
+
+#payH{
+  font-size: 40px;
+}
+
 #intro{
   color: #404040
 }

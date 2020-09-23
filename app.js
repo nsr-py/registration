@@ -25,7 +25,7 @@ const q2Input = document.querySelectorAll(".ques2");
  
 
 
-form.addEventListener('submit', event => {
+form.addEventListener('SUBMIT', event => {
   
   event.preventDefault()
 
@@ -33,6 +33,7 @@ form.addEventListener('submit', event => {
   const email = document.getElementById("email").value;
   const mobile = document.getElementById("mobile").value;
   const dob = document.getElementById("dob").value;
+  const Qualf = document.getElementById("Qualf").value;
   
   let gender, q1Ans, q2Ans;
 
@@ -58,7 +59,7 @@ form.addEventListener('submit', event => {
   }
 
   const payload = {
-    name, email, mobile, dob, gender,
+    name, email, mobile, dob, gender, Qualf
     ques1: q1Ans,
     ques2: q2Ans
   }
@@ -70,5 +71,5 @@ form.addEventListener('submit', event => {
   .update(payload)
 
 
-  result.innerHTML = `<p>Form Data recieved</p>`
+  result.innerHTML = `<p>Registration Successful!</p>`
 })

@@ -74,3 +74,6 @@ html{
 #register{
   color: #404040;
 }
+#logo:hover{
+	opacity: 0.8;
+}

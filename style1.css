@@ -48,7 +48,6 @@ html{
   height: 50%;
 }
 
-
 .pay{
   margin: auto;
   text-align: center;
@@ -102,4 +101,7 @@ html{
 }
 #register{
   color: #404040;
+}
+#logo:hover{
+  opacity: 0.8;
 }

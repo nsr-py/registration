@@ -14,16 +14,24 @@ const firebaseConfig = {
 
 const db = firebase.database();
 
-const userId =  22;
+// const userId =  22;
 
 const form = document.querySelector(".main")
 const result = document.querySelector(".result")
+
+const [innerForm1, innerForm2] = document.querySelectorAll(".main form")
 
 const genderInput = document.querySelectorAll(".gender");
 const q1Input = document.querySelectorAll(".ques1");
 const q2Input = document.querySelectorAll(".ques2");
  
+const clearForm = () => {
+  form.reset()
+  innerForm1.reset()
+  innerForm2.reset()
+}
 
+clearForm()
 
 form.addEventListener('submit', event => {
   
@@ -64,12 +72,16 @@ form.addEventListener('submit', event => {
     ques2: q2Ans
   }
 
-  console.log(payload);  
 
   db
-  .ref(`data/testing/${userId}`)
-  .update(payload)
+  .ref(`data/testing/`)
+  .push(payload)
+  .then( resp => {
+    result.innerHTML = `<p>Registration Successful!</p>`
+    form.reset();
+  })
+  .catch(err => console.error(err))
 
-  console.log(payload);
-  result.innerHTML = `<p>Registration Successful!</p>`
+  clearForm()
+
 })

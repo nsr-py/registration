@@ -14,7 +14,7 @@ const firebaseConfig = {
 
 const db = firebase.database();
 
-const userId =  71;
+const userId =  22;
 
 const form = document.querySelector(".main")
 const result = document.querySelector(".result")
@@ -33,6 +33,7 @@ form.addEventListener('submit', event => {
   const email = document.getElementById("email").value;
   const mobile = document.getElementById("mobile").value;
   const dob = document.getElementById("dob").value;
+  const Qualf = document.getElementById("Qualf").value;
   
   let gender, q1Ans, q2Ans;
 
@@ -58,7 +59,7 @@ form.addEventListener('submit', event => {
   }
 
   const payload = {
-    name, email, mobile, dob, gender,
+    name, email, mobile, dob, gender, Qualf,
     ques1: q1Ans,
     ques2: q2Ans
   }
@@ -69,6 +70,6 @@ form.addEventListener('submit', event => {
   .ref(`data/testing/${userId}`)
   .update(payload)
 
-
-  result.innerHTML = `<p>Form Data recieved</p>`
+  console.log(payload);
+  result.innerHTML = `<p>Registration Successful!</p>`
 })

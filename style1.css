@@ -1,0 +1,107 @@
+html{
+  background-color: #E0E0E0  ;
+}
+
+.rule{
+  border-top: 1px solid grey ;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  
+/*  margin: 5px 2px;
+*//*  border-radius: 50%;
+*/}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+/*  background: #B3B6B7;
+*/  color: #4B0082;
+}
+
+.fa-twitter {
+/*  background: #B3B6B7;
+*/  color: #4B0082;
+}
+
+.fa-linkedin {
+/*  background: #B3B6B7;
+*/  color: #4B0082;
+}
+
+.fa-instagram {
+/*  background: #B3B6B7;
+*/  color: #4B0082;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
+
+.pay{
+  margin: auto;
+  text-align: center;
+  color: #303030;
+}
+
+.qr{
+  position:relative;
+  height:40%;
+  width:40%;
+}
+.qr img{
+  align-content: center;
+  display:block;
+  width:150px;
+  margin:auto;
+  padding:0;
+  position:relative;
+  left:75%;
+}
+
+#cong{
+  font-size: 20px;
+}
+
+#payH{
+  font-size: 40px;
+}
+
+#intro{
+  color: #404040
+}
+
+#cont{
+  color: #303030;
+}
+
+#para{
+  border: 2px solid grey;
+  color: #303030;
+  padding: 5px 10px;
+  
+}
+
+#details{
+  text-align: center;
+}
+#foot{
+  color: #404040;
+
+}
+#register{
+  color: #404040;
+}
+#logo:hover{
+  opacity: 0.8;
+}

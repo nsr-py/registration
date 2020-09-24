@@ -25,7 +25,7 @@ const q2Input = document.querySelectorAll(".ques2");
  
 
 
-form.addEventListener('SUBMIT', event => {
+form.addEventListener('submit', event => {
   
   event.preventDefault()
 

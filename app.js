@@ -74,7 +74,7 @@ form.addEventListener('submit', event => {
 
 
   db
-  .ref(`data/testing/`)
+  .ref(`data/`)
   .push(payload)
   .then( resp => {
     result.innerHTML = `<p>Registration Successful!</p>`

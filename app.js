@@ -14,7 +14,7 @@ const firebaseConfig = {
 
 const db = firebase.database();
 
-const userId =  71;
+const userId =  22;
 
 const form = document.querySelector(".main")
 const result = document.querySelector(".result")
@@ -59,7 +59,7 @@ form.addEventListener('submit', event => {
   }
 
   const payload = {
-    name, email, mobile, dob, gender, Qualf
+    name, email, mobile, dob, gender, Qualf,
     ques1: q1Ans,
     ques2: q2Ans
   }
@@ -70,6 +70,6 @@ form.addEventListener('submit', event => {
   .ref(`data/testing/${userId}`)
   .update(payload)
 
-
+  console.log(payload);
   result.innerHTML = `<p>Registration Successful!</p>`
 })
